@@ -19,14 +19,14 @@ const Registration = () => {
   const [loginData, setLoginData] = useContext(LoginContext);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/activity/${id}`)
+    fetch(`https://limitless-meadow-98289.herokuapp.com/activity/${id}`)
       .then(response => response.json())
       .then(result => setActivity(result))
   }, [id]);
 
   const onSubmit = data => {
     const { isSignedIn, ...rest } = { ...loginData, ...data, activity_img: activity.activity_img };
-    fetch('http://localhost:4000/addEvent', {
+    fetch('https://limitless-meadow-98289.herokuapp.com/addEvent', {
       method: 'POST',
       body: JSON.stringify({ ...rest }),
       headers: {

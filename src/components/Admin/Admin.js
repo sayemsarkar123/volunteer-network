@@ -8,7 +8,7 @@ const Admin = () => {
   const [events, setEvents] = useState([]);
   const [addEvent, setAddEvent] = useState(false);
   useEffect(() => {
-    fetch('http://localhost:4000/getAllEvents')
+    fetch('https://limitless-meadow-98289.herokuapp.com/getAllEvents')
       .then(response => response.json())
       .then(result => setEvents(result))
   }, []);

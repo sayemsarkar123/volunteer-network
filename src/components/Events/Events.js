@@ -6,7 +6,7 @@ const Events = () => {
   const [loginData, setLoginData] = useContext(LoginContext);
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:4000/userAllEvents/?email=${loginData.email}`)
+    fetch(`https://limitless-meadow-98289.herokuapp.com/userAllEvents/?email=${loginData.email}`)
       .then(response => response.json())
       .then(result => setEvents(result))
   }, [loginData]);

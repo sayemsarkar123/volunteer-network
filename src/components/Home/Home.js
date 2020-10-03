@@ -6,7 +6,7 @@ const Home = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/getAllActivities')
+    fetch('https://limitless-meadow-98289.herokuapp.com/getAllActivities')
       .then((response) => response.json())
       .then((result) => setActivities(result));
   }, []);

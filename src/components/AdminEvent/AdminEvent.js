@@ -7,7 +7,7 @@ const AdminEvent = ({ event }) => {
   const { _id, name, email, date, activity_name } = event;
 
   const deleteEvent = id => {
-    fetch(`http://localhost:4000/deleteEvent/${id}`)
+    fetch(`https://limitless-meadow-98289.herokuapp.com/deleteEvent/${id}`)
       .then(response => response.json())
       .then(result => console.log(result));
   }

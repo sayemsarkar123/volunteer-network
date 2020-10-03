@@ -6,7 +6,7 @@ const AddEvent = () => {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = data => {
-    fetch('http://localhost:4000/addEvent', {
+    fetch('https://limitless-meadow-98289.herokuapp.com/addEvent', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

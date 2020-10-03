@@ -5,7 +5,7 @@ const Event = ({ event }) => {
   const { _id, activity_name, activity_img, date } = event;
 
   const deleteEvent = id => {
-    fetch(`http://localhost:4000/deleteEvent/${id}`)
+    fetch(`https://limitless-meadow-98289.herokuapp.com/deleteEvent/${id}`)
       .then(response => response.json())
       .then(result => console.log(result));
   }
