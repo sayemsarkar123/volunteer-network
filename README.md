@@ -4,4 +4,4 @@ ___
 
 ##### Technology used : React.js, Node.js, Express.js, MongoDB, Firebase
 \
-[Website](https://volunteer-network-2020-9ae4b.web.app/) | [Resume](https://drive.google.com/file/d/1glAZTxGi0fT7dcWymtLVImHUR6ZkIAHD/view?usp=sharing)
+[Website](https://volunteer-network-2020-9ae4b.web.app/) / [Resume](https://drive.google.com/file/d/1glAZTxGi0fT7dcWymtLVImHUR6ZkIAHD/view?usp=sharing)
